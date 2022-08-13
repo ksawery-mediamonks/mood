@@ -1,0 +1,119 @@
+.container {
+  position: absolute;
+  bottom: 0;
+
+  height: rem(70px);
+  padding: 0 rem(20px);
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.button {
+  position: relative;
+  width: rem(50px);
+  height: rem(50px);
+
+  border-radius: 100%;
+  border: rem(4px) solid $colorBluebonnet;
+
+  font-size: rem(30px);
+  color: $colorBluebonnet;
+  font-weight: 900;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+
+    fill: none;
+    stroke: $colorBluebonnet;
+
+    ellipse,
+    circle {
+      fill: $colorBluebonnet;
+    }
+  }
+}
+
+.tooltip {
+  position: absolute;
+  bottom: rem(80px);
+  min-width: rem(210px);
+  min-height: rem(85px);
+
+  background-color: $colorBrightGray;
+  border: rem(5px) solid $colorBluebonnet;
+  border-radius: rem(10px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.copy {
+  text-transform: uppercase;
+  color: $colorBluebonnet;
+  font-weight: 900;
+  font-size: rem(16px);
+}
+
+.displayed {
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $colorBluebonnet;
+    border-radius: 100%;
+
+    width: rem(12px);
+    height: rem(12px);
+    bottom: rem(5px);
+    left: 50%;
+    margin-left: rem(-6px);
+  }
+}
+
+@include mq-wide {
+  .container {
+    height: rem(120px);
+    padding: 0 rem(65px);
+  }
+
+  .button {
+    width: rem(75px);
+    height: rem(75px);
+
+    font-size: rem(40px);
+    color: $colorBluebonnet;
+  }
+
+  .tooltip {
+    position: absolute;
+    bottom: rem(130px);
+    min-width: rem(320px);
+    min-height: rem(130px);
+  }
+
+  .copy {
+    font-size: rem(34px);
+  }
+
+  .displayed {
+    &::after {
+      width: rem(20px);
+      height: rem(20px);
+      bottom: rem(12px);
+      left: 50%;
+      margin-left: rem(-10px);
+    }
+  }
+}

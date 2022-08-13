@@ -1,0 +1,25 @@
+.container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: rem(70px);
+  padding: 0 rem(20px);
+
+  z-index: 1;
+}
+
+.heading {
+  font-size: rem(20px);
+  color: $colorBluebonnet;
+}
+
+@include mq-wide {
+  .container {
+    height: rem(120px);
+    padding: 0 rem(65px);
+  }
+
+  .heading {
+    font-size: rem(34px);
+  }
+}

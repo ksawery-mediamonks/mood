@@ -1,0 +1,44 @@
+html,
+body {
+  @include text-rendering;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  margin: 0 auto;
+
+  background-color: $colorBrightGray;
+
+  font-family: $inter-regular;
+
+  color: $colorBlack;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+html {
+  @include fluidBaseRem(375, 750, 16, 32);
+
+  overflow-x: hidden;
+
+  -webkit-marquee-increment: 0vw; // fluid typo fix for safari https://www.sarasoueidan.com/blog/safari-fluid-typography-bug-fix/
+
+  box-sizing: border-box;
+
+  background-color: $colorWhite;
+
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -khtml-font-smoothing: antialiased;
+  -apple-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@include mq-wide {
+  html {
+    @include fluidBaseRem(1024, 1920, 10, 16);
+  }
+}

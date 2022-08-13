@@ -1,0 +1,34 @@
+{
+  "heading": ["MOODY FACES"],
+  "copy": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+  "items": [
+    {
+      "title": "Mood 1",
+      "copy": "Happy, horny & hungry"
+    },
+    {
+      "title": "Mood 2",
+      "copy": "Content, carefree & cocky "
+    },
+    {
+      "title": "Mood 3",
+      "copy": "Satisfied, smug & slack "
+    },
+    {
+      "title": "Mood 4",
+      "copy": "Moderate, mediocre & “meh”"
+    },
+    {
+      "title": "Mood 5",
+      "copy": "Troubled, tired and touchy"
+    },
+    {
+      "title": "Mood 6",
+      "copy": "Downhearted, dismal & despairing"
+    },
+    {
+      "title": "Mood 7",
+      "copy": "Sad, sorrowful & out of sorts"
+    }
+  ]
+}

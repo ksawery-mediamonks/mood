@@ -1,0 +1,119 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+
+  position: relative;
+  pointer-events: none;
+
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+  padding: 0 rem(20px);
+}
+
+.center {
+  @include absolute-center;
+  width: 100%;
+}
+
+.button {
+  @include absolute-center;
+
+  border-radius: 100%;
+  overflow: hidden;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.copy {
+  display: none;
+}
+
+.mood1 {
+  width: rem(750px);
+  height: rem(750px);
+}
+
+.mood2 {
+  width: rem(650px);
+  height: rem(650px);
+}
+
+.mood3 {
+  width: rem(550px);
+  height: rem(550px);
+}
+
+.mood4 {
+  width: rem(450px);
+  height: rem(450px);
+}
+
+.mood5 {
+  width: rem(350px);
+  height: rem(350px);
+}
+
+.mood6 {
+  width: rem(250px);
+  height: rem(250px);
+}
+
+.mood7 {
+  width: rem(180px);
+  height: rem(180px);
+}
+
+@include mq-wide {
+  .mood1 {
+    width: rem(1600px);
+    height: rem(1600px);
+  }
+
+  .mood2 {
+    width: rem(1400px);
+    height: rem(1400px);
+  }
+
+  .mood3 {
+    width: rem(1200px);
+    height: rem(1200px);
+  }
+
+  .mood4 {
+    width: rem(1000px);
+    height: rem(1000px);
+  }
+
+  .mood5 {
+    width: rem(800px);
+    height: rem(800px);
+  }
+
+  .mood6 {
+    width: rem(600px);
+    height: rem(600px);
+  }
+
+  .mood7 {
+    width: rem(400px);
+    height: rem(400px);
+  }
+}

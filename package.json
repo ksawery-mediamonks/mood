@@ -1,0 +1,27 @@
+{
+  "name": "moody",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "gsap": "^3.10.4",
+    "lodash-es": "^4.17.21",
+    "next": "12.2.4",
+    "next-transpile-modules": "^9.0.0",
+    "node-sass-json-importer": "^4.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.3.1",
+    "eslint": "8.21.0",
+    "eslint-config-next": "12.2.4",
+    "sass": "^1.54.3"
+  }
+}
